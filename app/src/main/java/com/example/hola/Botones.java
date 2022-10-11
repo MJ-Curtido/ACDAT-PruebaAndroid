@@ -7,11 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.hola.R;
-
-public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
+public class Botones extends AppCompatActivity implements  View.OnClickListener{
     private static Integer cont = 0;
 
     @Override
@@ -51,6 +48,5 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
             Button btnContar = (Button) view;
             btnContar.setText("Pulsaciones: " + cont);
         }
-        //Toast.makeText(this, "Hehehe shuuuuuu", Toast.LENGTH_LONG).show();
     }
 }
