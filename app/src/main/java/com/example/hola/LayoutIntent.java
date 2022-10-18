@@ -2,7 +2,9 @@ package com.example.hola;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 public class LayoutIntent extends AppCompatActivity implements  View.OnClickListener{
     private static Integer cont = 0;
     Bundle bundle;
+    SharedPreferences preferencias;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,10 @@ public class LayoutIntent extends AppCompatActivity implements  View.OnClickList
 
         btnContar.setOnClickListener(this);
         btnIntent2.setOnClickListener(this);
+
+        preferencias = getSharedPreferences("archivo", Context.MODE_PRIVATE);
+
+        txtTamanyo.setText(preferencias.getString("archivo", ""));
     }
 
     @Override

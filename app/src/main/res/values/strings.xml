@@ -5,4 +5,6 @@
     <string name="btnSaludar2">Saludar2</string>
     <string name="btnIntent">Intent</string>
     <string name="btnContar">Pulsación: 0</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="lblInsertePizza">Escriba su pizza favorita:</string>
 </resources>

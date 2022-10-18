@@ -1,9 +1,7 @@
-package com.example.hola.calculadora;
+package com.example.hola.manejadorEventos;
 
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.example.hola.Calculadora;
 import com.example.hola.R;

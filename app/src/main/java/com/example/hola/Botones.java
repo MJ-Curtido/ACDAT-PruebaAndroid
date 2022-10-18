@@ -45,7 +45,7 @@ public class Botones extends AppCompatActivity implements  View.OnClickListener{
         else {
             Intent i = new Intent(Botones.this, LayoutIntent.class);
 
-            String tamanyo = "Vaya paho pizza mpare";
+            String tamanyo = "";
             i.putExtra("tamanyoPizza", tamanyo);
 
             startActivity(i);
