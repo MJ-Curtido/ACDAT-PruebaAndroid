@@ -2,4 +2,7 @@
     <string name="app_name">Hola</string>
     <string name="txtSaludar">Hola</string>
     <string name="btnSaludar">Saludar</string>
+    <string name="btnSaludar2">Saludar2</string>
+    <string name="btnIntent">Intent</string>
+    <string name="btnContar">Pulsación: 0</string>
 </resources>
