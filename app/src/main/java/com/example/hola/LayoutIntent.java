@@ -21,6 +21,7 @@ public class LayoutIntent extends AppCompatActivity implements  View.OnClickList
         setContentView(R.layout.activity_layout_intent);
         Button btnContar = findViewById(R.id.btnContar);
         Button btnIntent2 = findViewById(R.id.btnIntent2);
+        Button btnArchivo = findViewById(R.id.btnArchivo);
         TextView txtTamanyo = findViewById(R.id.txtTamanyo);
         bundle = getIntent(). getExtras();
 
@@ -30,6 +31,7 @@ public class LayoutIntent extends AppCompatActivity implements  View.OnClickList
 
         btnContar.setOnClickListener(this);
         btnIntent2.setOnClickListener(this);
+        btnArchivo.setOnClickListener(this);
 
         preferencias = getSharedPreferences("archivo", Context.MODE_PRIVATE);
 
@@ -43,8 +45,12 @@ public class LayoutIntent extends AppCompatActivity implements  View.OnClickList
             Button btnContar = (Button) view;
             btnContar.setText("Pulsaciones: " + cont);
         }
+        else if (view.getId() == R.id.btnIntent2) {
+            Intent i = new Intent(this, Botones.class);
+            startActivity(i);
+        }
         else {
-            Intent i = new Intent(LayoutIntent.this, Botones.class);
+            Intent i = new Intent(this, LeerArchivos.class);
             startActivity(i);
         }
     }

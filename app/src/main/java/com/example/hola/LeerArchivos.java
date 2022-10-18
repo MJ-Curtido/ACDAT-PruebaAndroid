@@ -3,6 +3,7 @@ package com.example.hola;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -33,5 +34,8 @@ public class LeerArchivos extends AppCompatActivity implements View.OnClickListe
         editor.putString("archivo", cajaTamanyo.getText().toString());
 
         editor.commit();
+
+        Intent i = new Intent(this, LayoutIntent.class);
+        startActivity(i);
     }
 }
